@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Expo and development caches
+.expo/
+.expo-shared/
+web-build/
+
+# Logs and temporary files
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tmp
+*.temp
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini

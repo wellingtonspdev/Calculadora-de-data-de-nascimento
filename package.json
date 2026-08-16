@@ -1,0 +1,18 @@
+{
+  "name": "atividade-pratica-1-data-nascimento",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "expo": "~54.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  }
+}
