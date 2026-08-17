@@ -39,8 +39,8 @@ export default function BirthDateScreen() {
         contentContainerStyle={appStyles.content}
         keyboardShouldPersistTaps="handled"
       >
-        <View pointerEvents="none" style={[appStyles.glow, appStyles.glowTop]} />
-        <View pointerEvents="none" style={[appStyles.glow, appStyles.glowBottom]} />
+        <View style={[appStyles.glow, appStyles.glowTop]} />
+        <View style={[appStyles.glow, appStyles.glowBottom]} />
 
         <View style={appStyles.header}>
           <View style={appStyles.headerBadge}>

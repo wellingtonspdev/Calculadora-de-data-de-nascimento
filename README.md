@@ -45,6 +45,8 @@ O cálculo usa diferenças entre datas civis — sem aproximações por milisseg
 | --- | --- | --- |
 | React Native 0.81 | Interface mobile | Permite compor a tela com componentes nativos. |
 | Expo SDK 54 | Ambiente de execução | Simplifica o ciclo de desenvolvimento do aplicativo. |
+| React Native Web | Interface no navegador | Reutiliza a mesma base de componentes no Expo Web. |
+| React DOM e Metro Runtime | Runtime Web | Permitem compilar e executar o target Web com Expo SDK 54. |
 | JavaScript (ESM) | Lógica e componentes | Mantém o projeto direto e adequado à atividade. |
 | Node.js test runner | Testes de regra de negócio | Valida os cálculos sem depender da interface. |
 
@@ -98,7 +100,7 @@ package-lock.json          versões reproduzíveis das dependências
 
 - Node.js 20.19 ou superior, com npm.
 - Ambiente compatível com Expo SDK 54.
-- Android com o ambiente Expo configurado para execução local.
+- Android com Expo Go/Android Emulator ou navegador para executar o Expo Web.
 
 ### Instalação
 
@@ -117,6 +119,16 @@ npx expo start --android
 
 Em um dispositivo físico, abra o Expo Go compatível com SDK 54 e conecte-se ao servidor iniciado pelo Expo.
 
+### Executar no Web
+
+Em um navegador, execute:
+
+```bash
+npx expo start --web
+```
+
+O mesmo código é executado no Expo Web, sem uma implementação separada para navegador.
+
 ## Testes
 
 Execute a validação das regras de negócio com:
@@ -129,9 +141,11 @@ Os testes verificam formatação, validade da data, idade civil, aniversários, 
 
 ## Compatibilidade validada
 
-- Dependências declaradas para Expo SDK 54, React Native 0.81 e JavaScript ESM.
+- **Android** — Expo Go no Android Emulator, com Expo SDK 54.
+- **Web** — Expo Web no navegador, com Expo SDK 54.
+- Dependências declaradas para Expo SDK 54, React Native 0.81, React Native Web e JavaScript ESM.
 - Regras de negócio validadas pelo comando `npm test`.
-- Interface construída com componentes nativos do React Native, com suporte de layout previsto para Android e telas compactas de 320 × 640 px.
+- Interface validada em Android e Web, incluindo viewport compacto de 320 × 640 px.
 
 ## Contexto acadêmico e aprendizados
 
