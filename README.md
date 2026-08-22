@@ -14,7 +14,7 @@ Aplicativo React Native de tela única para calcular idade civil completa.
 
 Aplicativo mobile de tela única para informar uma data de nascimento, calcular a idade civil completa e classificá-la por faixa etária. Desenvolvido como atividade acadêmica com React Native e Expo.
 
-![Captura real da Calculadora de Data de Nascimento no Android](docs/screenshots/app.png)
+![Captura real da Calculadora de Data de Nascimento no Android](https://raw.githubusercontent.com/wellingtonspdev/Calculadora-de-data-de-nascimento/backup-with-screenshot/docs/screenshots/app.png)
 
 ## Objetivo
 

@@ -27,3 +27,6 @@ yarn-error.*
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Local docs assets
+docs/screenshots/
